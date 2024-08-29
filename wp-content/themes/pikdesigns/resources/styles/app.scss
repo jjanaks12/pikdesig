@@ -2,19 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
-#wrapper {
-    overflow: hidden;
-    position: relative;
-}
+@import 'bases/variables';
 
-.under_construction {
-    @apply w-screen h-screen text-center flex justify-center items-center text-xl;
+@import 'bases/mixins';
+@import 'bases/functions';
+@import 'bases/helpers';
 
-    h1 {
-        @apply text-4xl mb-4;
-    }
+@import 'layouts/common';
+@import 'layouts/header';
 
-    .logo {
-        @apply w-[120] mx-auto mb-4;
-    }
-}
+@import 'pages/home';

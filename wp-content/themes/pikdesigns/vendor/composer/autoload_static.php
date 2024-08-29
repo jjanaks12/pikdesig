@@ -67,6 +67,7 @@ class ComposerStaticInit0783df7025bae9993604304b69b4ba12
             'Symfony\\Component\\EventDispatcher\\' => 34,
             'Symfony\\Component\\ErrorHandler\\' => 31,
             'Symfony\\Component\\Console\\' => 26,
+            'StoutLogic\\AcfBuilder\\' => 22,
         ),
         'R' => 
         array (
@@ -91,6 +92,7 @@ class ComposerStaticInit0783df7025bae9993604304b69b4ba12
         ),
         'L' => 
         array (
+            'Log1x\\AcfComposer\\' => 18,
             'League\\MimeTypeDetection\\' => 25,
             'League\\Flysystem\\Local\\' => 23,
             'League\\Flysystem\\' => 17,
@@ -261,6 +263,10 @@ class ComposerStaticInit0783df7025bae9993604304b69b4ba12
         array (
             0 => __DIR__ . '/..' . '/symfony/console',
         ),
+        'StoutLogic\\AcfBuilder\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/stoutlogic/acf-builder/src',
+        ),
         'Roots\\' => 
         array (
             0 => __DIR__ . '/..' . '/roots/acorn/src/Roots',
@@ -283,8 +289,8 @@ class ComposerStaticInit0783df7025bae9993604304b69b4ba12
         ),
         'Psr\\Http\\Message\\' => 
         array (
-            0 => __DIR__ . '/..' . '/psr/http-message/src',
-            1 => __DIR__ . '/..' . '/psr/http-factory/src',
+            0 => __DIR__ . '/..' . '/psr/http-factory/src',
+            1 => __DIR__ . '/..' . '/psr/http-message/src',
         ),
         'Psr\\Http\\Client\\' => 
         array (
@@ -309,6 +315,10 @@ class ComposerStaticInit0783df7025bae9993604304b69b4ba12
         'Monolog\\' => 
         array (
             0 => __DIR__ . '/..' . '/monolog/monolog/src/Monolog',
+        ),
+        'Log1x\\AcfComposer\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/log1x/acf-composer/src',
         ),
         'League\\MimeTypeDetection\\' => 
         array (
@@ -344,9 +354,9 @@ class ComposerStaticInit0783df7025bae9993604304b69b4ba12
         ),
         'Illuminate\\Support\\' => 
         array (
-            0 => __DIR__ . '/..' . '/illuminate/macroable',
+            0 => __DIR__ . '/..' . '/illuminate/collections',
             1 => __DIR__ . '/..' . '/illuminate/conditionable',
-            2 => __DIR__ . '/..' . '/illuminate/collections',
+            2 => __DIR__ . '/..' . '/illuminate/macroable',
             3 => __DIR__ . '/..' . '/illuminate/support',
         ),
         'Illuminate\\Session\\' => 
@@ -2039,6 +2049,44 @@ class ComposerStaticInit0783df7025bae9993604304b69b4ba12
         'League\\MimeTypeDetection\\GeneratedExtensionToMimeTypeMap' => __DIR__ . '/..' . '/league/mime-type-detection/src/GeneratedExtensionToMimeTypeMap.php',
         'League\\MimeTypeDetection\\MimeTypeDetector' => __DIR__ . '/..' . '/league/mime-type-detection/src/MimeTypeDetector.php',
         'League\\MimeTypeDetection\\OverridingExtensionToMimeTypeMap' => __DIR__ . '/..' . '/league/mime-type-detection/src/OverridingExtensionToMimeTypeMap.php',
+        'Log1x\\AcfComposer\\AcfComposer' => __DIR__ . '/..' . '/log1x/acf-composer/src/AcfComposer.php',
+        'Log1x\\AcfComposer\\Block' => __DIR__ . '/..' . '/log1x/acf-composer/src/Block.php',
+        'Log1x\\AcfComposer\\Builder' => __DIR__ . '/..' . '/log1x/acf-composer/src/Builder.php',
+        'Log1x\\AcfComposer\\Builder\\AccordionBuilder' => __DIR__ . '/..' . '/log1x/acf-composer/src/Builder/AccordionBuilder.php',
+        'Log1x\\AcfComposer\\Builder\\ChoiceFieldBuilder' => __DIR__ . '/..' . '/log1x/acf-composer/src/Builder/ChoiceFieldBuilder.php',
+        'Log1x\\AcfComposer\\Builder\\Concerns\\HasParentContext' => __DIR__ . '/..' . '/log1x/acf-composer/src/Builder/Concerns/HasParentContext.php',
+        'Log1x\\AcfComposer\\Builder\\FieldBuilder' => __DIR__ . '/..' . '/log1x/acf-composer/src/Builder/FieldBuilder.php',
+        'Log1x\\AcfComposer\\Builder\\FlexibleContentBuilder' => __DIR__ . '/..' . '/log1x/acf-composer/src/Builder/FlexibleContentBuilder.php',
+        'Log1x\\AcfComposer\\Builder\\GroupBuilder' => __DIR__ . '/..' . '/log1x/acf-composer/src/Builder/GroupBuilder.php',
+        'Log1x\\AcfComposer\\Builder\\RepeaterBuilder' => __DIR__ . '/..' . '/log1x/acf-composer/src/Builder/RepeaterBuilder.php',
+        'Log1x\\AcfComposer\\Builder\\TabBuilder' => __DIR__ . '/..' . '/log1x/acf-composer/src/Builder/TabBuilder.php',
+        'Log1x\\AcfComposer\\Composer' => __DIR__ . '/..' . '/log1x/acf-composer/src/Composer.php',
+        'Log1x\\AcfComposer\\Concerns\\FormatsCss' => __DIR__ . '/..' . '/log1x/acf-composer/src/Concerns/FormatsCss.php',
+        'Log1x\\AcfComposer\\Concerns\\InteractsWithBlade' => __DIR__ . '/..' . '/log1x/acf-composer/src/Concerns/InteractsWithBlade.php',
+        'Log1x\\AcfComposer\\Concerns\\InteractsWithPartial' => __DIR__ . '/..' . '/log1x/acf-composer/src/Concerns/InteractsWithPartial.php',
+        'Log1x\\AcfComposer\\Console\\BlockMakeCommand' => __DIR__ . '/..' . '/log1x/acf-composer/src/Console/BlockMakeCommand.php',
+        'Log1x\\AcfComposer\\Console\\CacheCommand' => __DIR__ . '/..' . '/log1x/acf-composer/src/Console/CacheCommand.php',
+        'Log1x\\AcfComposer\\Console\\ClearCommand' => __DIR__ . '/..' . '/log1x/acf-composer/src/Console/ClearCommand.php',
+        'Log1x\\AcfComposer\\Console\\FieldMakeCommand' => __DIR__ . '/..' . '/log1x/acf-composer/src/Console/FieldMakeCommand.php',
+        'Log1x\\AcfComposer\\Console\\IdeHelpersCommand' => __DIR__ . '/..' . '/log1x/acf-composer/src/Console/IdeHelpersCommand.php',
+        'Log1x\\AcfComposer\\Console\\MakeCommand' => __DIR__ . '/..' . '/log1x/acf-composer/src/Console/MakeCommand.php',
+        'Log1x\\AcfComposer\\Console\\OptionsMakeCommand' => __DIR__ . '/..' . '/log1x/acf-composer/src/Console/OptionsMakeCommand.php',
+        'Log1x\\AcfComposer\\Console\\PartialMakeCommand' => __DIR__ . '/..' . '/log1x/acf-composer/src/Console/PartialMakeCommand.php',
+        'Log1x\\AcfComposer\\Console\\StubPublishCommand' => __DIR__ . '/..' . '/log1x/acf-composer/src/Console/StubPublishCommand.php',
+        'Log1x\\AcfComposer\\Console\\UpgradeCommand' => __DIR__ . '/..' . '/log1x/acf-composer/src/Console/UpgradeCommand.php',
+        'Log1x\\AcfComposer\\Console\\WidgetMakeCommand' => __DIR__ . '/..' . '/log1x/acf-composer/src/Console/WidgetMakeCommand.php',
+        'Log1x\\AcfComposer\\Contracts\\Block' => __DIR__ . '/..' . '/log1x/acf-composer/src/Contracts/Block.php',
+        'Log1x\\AcfComposer\\Contracts\\Composer' => __DIR__ . '/..' . '/log1x/acf-composer/src/Contracts/Composer.php',
+        'Log1x\\AcfComposer\\Contracts\\Field' => __DIR__ . '/..' . '/log1x/acf-composer/src/Contracts/Field.php',
+        'Log1x\\AcfComposer\\Contracts\\Widget' => __DIR__ . '/..' . '/log1x/acf-composer/src/Contracts/Widget.php',
+        'Log1x\\AcfComposer\\Exceptions\\DuplicateKeyException' => __DIR__ . '/..' . '/log1x/acf-composer/src/Exceptions/DuplicateKeyException.php',
+        'Log1x\\AcfComposer\\Exceptions\\InvalidFieldsException' => __DIR__ . '/..' . '/log1x/acf-composer/src/Exceptions/InvalidFieldsException.php',
+        'Log1x\\AcfComposer\\Field' => __DIR__ . '/..' . '/log1x/acf-composer/src/Field.php',
+        'Log1x\\AcfComposer\\Manifest' => __DIR__ . '/..' . '/log1x/acf-composer/src/Manifest.php',
+        'Log1x\\AcfComposer\\Options' => __DIR__ . '/..' . '/log1x/acf-composer/src/Options.php',
+        'Log1x\\AcfComposer\\Partial' => __DIR__ . '/..' . '/log1x/acf-composer/src/Partial.php',
+        'Log1x\\AcfComposer\\Providers\\AcfComposerServiceProvider' => __DIR__ . '/..' . '/log1x/acf-composer/src/Providers/AcfComposerServiceProvider.php',
+        'Log1x\\AcfComposer\\Widget' => __DIR__ . '/..' . '/log1x/acf-composer/src/Widget.php',
         'Monolog\\Attribute\\AsMonologProcessor' => __DIR__ . '/..' . '/monolog/monolog/src/Monolog/Attribute/AsMonologProcessor.php',
         'Monolog\\Attribute\\WithMonologChannel' => __DIR__ . '/..' . '/monolog/monolog/src/Monolog/Attribute/WithMonologChannel.php',
         'Monolog\\DateTimeImmutable' => __DIR__ . '/..' . '/monolog/monolog/src/Monolog/DateTimeImmutable.php',
@@ -2418,6 +2466,32 @@ class ComposerStaticInit0783df7025bae9993604304b69b4ba12
         'Roots\\Acorn\\View\\FileViewFinder' => __DIR__ . '/..' . '/roots/acorn/src/Roots/Acorn/View/FileViewFinder.php',
         'Roots\\Acorn\\View\\ViewServiceProvider' => __DIR__ . '/..' . '/roots/acorn/src/Roots/Acorn/View/ViewServiceProvider.php',
         'SQLite3Exception' => __DIR__ . '/..' . '/symfony/polyfill-php83/Resources/stubs/SQLite3Exception.php',
+        'StoutLogic\\AcfBuilder\\AccordionBuilder' => __DIR__ . '/..' . '/stoutlogic/acf-builder/src/AccordionBuilder.php',
+        'StoutLogic\\AcfBuilder\\Builder' => __DIR__ . '/..' . '/stoutlogic/acf-builder/src/Builder.php',
+        'StoutLogic\\AcfBuilder\\ChoiceFieldBuilder' => __DIR__ . '/..' . '/stoutlogic/acf-builder/src/ChoiceFieldBuilder.php',
+        'StoutLogic\\AcfBuilder\\ConditionalBuilder' => __DIR__ . '/..' . '/stoutlogic/acf-builder/src/ConditionalBuilder.php',
+        'StoutLogic\\AcfBuilder\\FieldBuilder' => __DIR__ . '/..' . '/stoutlogic/acf-builder/src/FieldBuilder.php',
+        'StoutLogic\\AcfBuilder\\FieldManager' => __DIR__ . '/..' . '/stoutlogic/acf-builder/src/FieldManager.php',
+        'StoutLogic\\AcfBuilder\\FieldNameCollisionException' => __DIR__ . '/..' . '/stoutlogic/acf-builder/src/FieldNameCollisionException.php',
+        'StoutLogic\\AcfBuilder\\FieldNotFoundException' => __DIR__ . '/..' . '/stoutlogic/acf-builder/src/FieldNotFoundException.php',
+        'StoutLogic\\AcfBuilder\\FieldsBuilder' => __DIR__ . '/..' . '/stoutlogic/acf-builder/src/FieldsBuilder.php',
+        'StoutLogic\\AcfBuilder\\FlexibleContentBuilder' => __DIR__ . '/..' . '/stoutlogic/acf-builder/src/FlexibleContentBuilder.php',
+        'StoutLogic\\AcfBuilder\\GroupBuilder' => __DIR__ . '/..' . '/stoutlogic/acf-builder/src/GroupBuilder.php',
+        'StoutLogic\\AcfBuilder\\LayoutNotFoundException' => __DIR__ . '/..' . '/stoutlogic/acf-builder/src/LayoutNotFoundException.php',
+        'StoutLogic\\AcfBuilder\\LocationBuilder' => __DIR__ . '/..' . '/stoutlogic/acf-builder/src/LocationBuilder.php',
+        'StoutLogic\\AcfBuilder\\ModifyFieldReturnTypeException' => __DIR__ . '/..' . '/stoutlogic/acf-builder/src/ModifyFieldReturnTypeException.php',
+        'StoutLogic\\AcfBuilder\\NamedBuilder' => __DIR__ . '/..' . '/stoutlogic/acf-builder/src/NamedBuilder.php',
+        'StoutLogic\\AcfBuilder\\ParentDelegationBuilder' => __DIR__ . '/..' . '/stoutlogic/acf-builder/src/ParentDelegationBuilder.php',
+        'StoutLogic\\AcfBuilder\\RepeaterBuilder' => __DIR__ . '/..' . '/stoutlogic/acf-builder/src/RepeaterBuilder.php',
+        'StoutLogic\\AcfBuilder\\TabBuilder' => __DIR__ . '/..' . '/stoutlogic/acf-builder/src/TabBuilder.php',
+        'StoutLogic\\AcfBuilder\\Traits\\CanSingularize' => __DIR__ . '/..' . '/stoutlogic/acf-builder/src/Traits/CanSingularize.php',
+        'StoutLogic\\AcfBuilder\\Transform\\ConditionalField' => __DIR__ . '/..' . '/stoutlogic/acf-builder/src/Transform/ConditionalField.php',
+        'StoutLogic\\AcfBuilder\\Transform\\ConditionalLogic' => __DIR__ . '/..' . '/stoutlogic/acf-builder/src/Transform/ConditionalLogic.php',
+        'StoutLogic\\AcfBuilder\\Transform\\FlexibleContentLayout' => __DIR__ . '/..' . '/stoutlogic/acf-builder/src/Transform/FlexibleContentLayout.php',
+        'StoutLogic\\AcfBuilder\\Transform\\IterativeTransform' => __DIR__ . '/..' . '/stoutlogic/acf-builder/src/Transform/IterativeTransform.php',
+        'StoutLogic\\AcfBuilder\\Transform\\NamespaceFieldKey' => __DIR__ . '/..' . '/stoutlogic/acf-builder/src/Transform/NamespaceFieldKey.php',
+        'StoutLogic\\AcfBuilder\\Transform\\RecursiveTransform' => __DIR__ . '/..' . '/stoutlogic/acf-builder/src/Transform/RecursiveTransform.php',
+        'StoutLogic\\AcfBuilder\\Transform\\Transform' => __DIR__ . '/..' . '/stoutlogic/acf-builder/src/Transform/Transform.php',
         'Stringable' => __DIR__ . '/..' . '/symfony/polyfill-php80/Resources/stubs/Stringable.php',
         'Symfony\\Component\\Console\\Application' => __DIR__ . '/..' . '/symfony/console/Application.php',
         'Symfony\\Component\\Console\\Attribute\\AsCommand' => __DIR__ . '/..' . '/symfony/console/Attribute/AsCommand.php',

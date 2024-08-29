@@ -1,0 +1,28 @@
+#wrapper {
+    overflow: hidden;
+    position: relative;
+}
+
+.container {
+    @apply max-w-[1200] mx-auto;
+}
+
+.logo {
+    @apply text-2xl font-bold;
+
+    img {
+        @apply w-full h-auto;
+    }
+}
+
+.under_construction {
+    @apply w-screen h-screen text-center flex justify-center items-center text-xl;
+
+    h1 {
+        @apply text-4xl mb-4;
+    }
+
+    .logo {
+        @apply w-[120] mx-auto mb-4;
+    }
+}

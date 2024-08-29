@@ -1,0 +1,19 @@
+#header {
+    @apply py-4 border-b border-solid border-secondary;
+
+    .container {
+        @apply flex items-center justify-between;
+    }
+}
+
+#nav {
+
+}
+
+.main__menu {
+    @apply flex gap-4;
+
+    a {
+        @apply text-primary hover:text-secondary transition-colors;
+    }
+}
