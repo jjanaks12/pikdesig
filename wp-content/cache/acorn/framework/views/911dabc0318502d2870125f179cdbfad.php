@@ -1,0 +1,2 @@
+<?php (dynamic_sidebar('sidebar-primary')); ?>
+<?php /**PATH /Users/janakshrestha/Documents/2024/08 August/pikdesig/wp-content/themes/pikdesigns/resources/views/sections/sidebar.blade.php ENDPATH**/ ?>
