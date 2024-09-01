@@ -6,6 +6,13 @@
       0 => 'Log1x\\AcfComposer\\Providers\\AcfComposerServiceProvider',
     ),
   ),
+  'log1x/poet' => 
+  array (
+    'providers' => 
+    array (
+      0 => 'Log1x\\Poet\\PoetServiceProvider',
+    ),
+  ),
   'nesbot/carbon' => 
   array (
     'providers' => 

@@ -2,7 +2,11 @@
     @apply py-4 border-b border-solid border-secondary;
 
     .container {
-        @apply flex items-center justify-between;
+        @apply flex items-center;
+    }
+
+    .logo {
+        @apply w-[80px] mr-20;
     }
 }
 

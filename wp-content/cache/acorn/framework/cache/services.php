@@ -20,9 +20,10 @@
     16 => 'Illuminate\\Database\\MigrationServiceProvider',
     17 => 'Illuminate\\Foundation\\Providers\\ComposerServiceProvider',
     18 => 'Log1x\\AcfComposer\\Providers\\AcfComposerServiceProvider',
-    19 => 'Carbon\\Laravel\\ServiceProvider',
-    20 => 'Termwind\\Laravel\\TermwindServiceProvider',
-    21 => 'App\\Providers\\ThemeServiceProvider',
+    19 => 'Log1x\\Poet\\PoetServiceProvider',
+    20 => 'Carbon\\Laravel\\ServiceProvider',
+    21 => 'Termwind\\Laravel\\TermwindServiceProvider',
+    22 => 'App\\Providers\\ThemeServiceProvider',
   ),
   'eager' => 
   array (
@@ -37,9 +38,10 @@
     8 => 'Roots\\Acorn\\Providers\\RouteServiceProvider',
     9 => 'Roots\\Acorn\\View\\ViewServiceProvider',
     10 => 'Log1x\\AcfComposer\\Providers\\AcfComposerServiceProvider',
-    11 => 'Carbon\\Laravel\\ServiceProvider',
-    12 => 'Termwind\\Laravel\\TermwindServiceProvider',
-    13 => 'App\\Providers\\ThemeServiceProvider',
+    11 => 'Log1x\\Poet\\PoetServiceProvider',
+    12 => 'Carbon\\Laravel\\ServiceProvider',
+    13 => 'Termwind\\Laravel\\TermwindServiceProvider',
+    14 => 'App\\Providers\\ThemeServiceProvider',
   ),
   'deferred' => 
   array (
