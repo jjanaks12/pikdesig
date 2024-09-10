@@ -2845,10 +2845,10 @@
     "lodash.memoize" "^4.1.2"
     "lodash.uniq" "^4.5.0"
 
-"caniuse-lite@^1.0.0", "caniuse-lite@^1.0.30001538", "caniuse-lite@^1.0.30001565":
-  "integrity" "sha512-XGWQVB8wFQ2+9NZwZ10GxTYC5hk0Fa+q8cSkr0tgvMhYhMHP/QC+WTgrePMDBWiWc/pV+1ik82Al20XOK25Gcw=="
-  "resolved" "https://registry.npmjs.org/caniuse-lite/-/caniuse-lite-1.0.30001653.tgz"
-  "version" "1.0.30001653"
+"caniuse-lite@^1.0.0", "caniuse-lite@^1.0.30001538", "caniuse-lite@^1.0.30001565", "caniuse-lite@^1.0.30001658":
+  "integrity" "sha512-N2YVqWbJELVdrnsW5p+apoQyYt51aBMSsBZki1XZEfeBCexcM/sf4xiAHcXQBkuOwJBXtWF7aW1sYX6tKebPHw=="
+  "resolved" "https://registry.npmjs.org/caniuse-lite/-/caniuse-lite-1.0.30001658.tgz"
+  "version" "1.0.30001658"
 
 "caniuse-lite@1.0.30001570":
   "integrity" "sha512-+3e0ASu4sw1SWaoCtvPeyXp+5PsjigkSt8OXZbF9StH5pQWbxEjLAZE3n8Aup5udop1uRiKA7a4utUk/uoSpUw=="
@@ -7411,6 +7411,11 @@
   "integrity" "sha512-D1p6XXURfSPleZZA/Lipb3A8pZ17fP4NObZvFCDjK/OKljroqDpPmsBdTraWhVBqUNpcWBQY1imWdoPScRlQ7A=="
   "resolved" "https://registry.npmjs.org/swc-loader/-/swc-loader-0.2.3.tgz"
   "version" "0.2.3"
+
+"swiper@^11.1.12":
+  "integrity" "sha512-PUkCToYAZMB4kP7z+YfPnkMHOMwMO71g8vUhz2o5INGIgIMb6Sb0XiP6cEJFsiFTd7FRDn5XCbg+KVKPDZqXLw=="
+  "resolved" "https://registry.npmjs.org/swiper/-/swiper-11.1.12.tgz"
+  "version" "11.1.12"
 
 "table@^6.8.2":
   "integrity" "sha512-w2sfv80nrAh2VCbqR5AK27wswXhqcck2AhfnNW76beQXskGZ1V12GwS//yYVa3d3fcvAip2OUnbDAjW2k3v9fA=="

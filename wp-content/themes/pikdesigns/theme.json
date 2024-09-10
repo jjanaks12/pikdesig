@@ -1279,6 +1279,11 @@
           "color": "#245edf",
           "name": "Info",
           "slug": "info"
+        },
+        {
+          "color": "#1c2b33",
+          "name": "Base",
+          "slug": "base"
         }
       ]
     },

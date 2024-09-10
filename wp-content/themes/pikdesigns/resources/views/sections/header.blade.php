@@ -1,6 +1,6 @@
 <header id="header">
     <div class="container">
-        <a class="logo" href="{{ home_url('/') }}">
+        <a class="logo" href="{{ home_url('/home-page') }}">
             <img src="{!! wp_get_attachment_url($siteLogo) !!}" alt="{{ $siteName }}">
         </a>
         @if (has_nav_menu('primary_navigation'))

@@ -50,7 +50,7 @@ return [
 
     'taxonomy' => [
         'portfolio_category' => [
-            'show_ui' => false,
+            'show_ui' => true,
             'meta_box' => 'radio',
             'labels' => [
                 'singular' => 'Category',

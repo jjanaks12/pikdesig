@@ -1,6 +1,6 @@
 <header id="header">
     <div class="container">
-        <a class="logo" href="<?php echo e(home_url('/')); ?>">
+        <a class="logo" href="<?php echo e(home_url('/home-page')); ?>">
             <img src="<?php echo wp_get_attachment_url($siteLogo); ?>" alt="<?php echo e($siteName); ?>">
         </a>
         <?php if(has_nav_menu('primary_navigation')): ?>
