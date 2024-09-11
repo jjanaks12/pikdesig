@@ -19,7 +19,7 @@ class ThemeOption extends Field
      *
      * @var string
      */
-    public $title = 'Theme Option | Options';
+    public $title = 'Theme Option';
 
     /**
      * The option page field group.
@@ -31,6 +31,14 @@ class ThemeOption extends Field
         $fields
             ->addGroup('Header')
                 ->addImage('logo', ['label' => 'Logo', 'return_format' => 'id'])
+            ->endGroup()
+            ->addGroup('Theme Colors')
+                ->addColorPicker('primary', ['label' => 'Primary'])
+                ->addColorPicker('secondary', ['label' => 'Seondary'])
+                ->addColorPicker('info', ['label' => 'Info'])
+                ->addColorPicker('success', ['label' => 'Success'])
+                ->addColorPicker('danger', ['label' => 'Danger'])
+                ->addColorPicker('warning', ['label' => 'Warning'])
             ->endGroup();
 
         return $fields->build();

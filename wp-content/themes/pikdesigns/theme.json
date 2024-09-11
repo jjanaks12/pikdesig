@@ -1389,6 +1389,11 @@
           "name": "9xl",
           "size": "8rem",
           "slug": "9xl"
+        },
+        {
+          "name": "c32",
+          "size": "2rem",
+          "slug": "c32"
         }
       ]
     }

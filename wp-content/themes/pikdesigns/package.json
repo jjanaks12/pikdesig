@@ -25,7 +25,9 @@
     "@roots/sage": "6.20.0"
   },
   "dependencies": {
+    "axios": "^1.7.7",
     "caniuse-lite": "^1.0.30001658",
-    "swiper": "^11.1.12"
+    "swiper": "^11.1.12",
+    "yup": "^1.4.0"
   }
 }

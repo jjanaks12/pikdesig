@@ -24,7 +24,7 @@ class App extends Composer
     {
         return [
             'siteName' => $this->siteName(),
-            'siteLogo' => get_field('Header_logo', 'option'),
+            'siteLogo' => get_field('Header_logo', 'option')
         ];
     }
 

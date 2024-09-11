@@ -7,9 +7,9 @@ $line-height-base: 1.2;
 // Colors
 $black: #000;
 $white: #fff;
-$primary: '#245edf';
-$secondary: '#8bc6ec';
-$warning: '#faad19';
-$success: '28a745';
-$danger: '#ff3000';
-$info: '#245edf';
+$primary: var(--primary, #245edf);
+$secondary: var(--secondary, #8bc6ec);
+$warning: var(--warning, #faad19);
+$success: var(--success, #28a745);
+$danger: var(--danger, #ff3000);
+$info: var(--info, #245edf);

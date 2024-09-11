@@ -31,6 +31,8 @@ h2 {
 }
 
 .swiper {
+    position: relative;
+    
     &-wrapper {
         width: 100%;
         display: flex;
@@ -39,4 +41,8 @@ h2 {
     &-slide {
         flex-shrink: 0;
     }
+}
+
+.sr-only {
+    @apply absolute invisible opacity-0;
 }

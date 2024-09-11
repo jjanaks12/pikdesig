@@ -14,8 +14,13 @@ const config = {
       }, // Extend Tailwind's default colors
       spacing: {
         'c80': '5rem', // 80px
+        'c50': '3.125rem', // 50px
         'c60': '3.75rem', // 60px
-        'c50': '3.125rem', // 60px
+        'c70': '4.375rem', // 70px
+        'c133': '8.3125rem', // 133px
+      },
+      fontSize: {
+        'c32': '2rem' // 32px
       },
       container: {
         center: true,
