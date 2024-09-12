@@ -1,3 +1,5 @@
+import { bud } from '@roots/bud';
+
 /**
  * Compiler configuration
  *
@@ -16,7 +18,7 @@ export default async (app) => {
   app
     .entry('app', ['@scripts/app', '@styles/app'])
     .entry('editor', ['@scripts/editor', '@styles/editor'])
-    .assets(['images']);
+    .assets(['images', 'videos']);
 
   /**
    * Set public path
@@ -35,7 +37,12 @@ export default async (app) => {
   app
     .setUrl('http://localhost:3000')
     .setProxyUrl('https://pikdesig.test/')
-    .watch(['resources/views', 'app']);
+    .watch(['resources/views', 'app'])
+    .serve({
+      ssl: true,
+      cert: bud.path('cert.pem'),
+      key: bud.path('key.pem')
+    });
 
   /**
    * Generate WordPress `theme.json`

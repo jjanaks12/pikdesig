@@ -1249,6 +1249,41 @@
           "color": "#4c0519",
           "name": "Rose 950",
           "slug": "rose-950"
+        },
+        {
+          "color": "#245edf",
+          "name": "Primary",
+          "slug": "primary"
+        },
+        {
+          "color": "#8bc6ec",
+          "name": "Secondary",
+          "slug": "secondary"
+        },
+        {
+          "color": "#faad19",
+          "name": "Warning",
+          "slug": "warning"
+        },
+        {
+          "color": "28a745",
+          "name": "Success",
+          "slug": "success"
+        },
+        {
+          "color": "#ff3000",
+          "name": "Danger",
+          "slug": "danger"
+        },
+        {
+          "color": "#245edf",
+          "name": "Info",
+          "slug": "info"
+        },
+        {
+          "color": "#1c2b33",
+          "name": "Base",
+          "slug": "base"
         }
       ]
     },
@@ -1354,6 +1389,11 @@
           "name": "9xl",
           "size": "8rem",
           "slug": "9xl"
+        },
+        {
+          "name": "c32",
+          "size": "2rem",
+          "slug": "c32"
         }
       ]
     }

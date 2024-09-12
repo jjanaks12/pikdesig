@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import 'bases/variables';
+
+@import 'bases/mixins';
+@import 'bases/functions';
+@import 'bases/helpers';
+
+@import 'components/button';
+
+@import 'layouts/common';
+@import 'layouts/header';
+@import 'layouts/footer';
+
+@import 'pages/home';

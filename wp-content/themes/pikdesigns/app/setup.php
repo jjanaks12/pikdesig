@@ -6,6 +6,8 @@
 
 namespace App;
 
+use WP_REST_Request;
+
 use function Roots\bundle;
 
 /**
@@ -46,6 +48,7 @@ add_action('after_setup_theme', function () {
      */
     register_nav_menus([
         'primary_navigation' => __('Primary Navigation', 'sage'),
+        'footer_navigation' => __('Footer Navigation', 'sage'),
     ]);
 
     /**
@@ -97,6 +100,28 @@ add_action('after_setup_theme', function () {
      * @link https://developer.wordpress.org/reference/functions/add_theme_support/#customize-selective-refresh-widgets
      */
     add_theme_support('customize-selective-refresh-widgets');
+
+    // Allow SVG
+    add_filter('wp_check_filetype_and_ext', function ($data, $file, $filename, $mimes) {
+
+        global $wp_version;
+        if ($wp_version !== '4.7.1') {
+            return $data;
+        }
+
+        $filetype = wp_check_filetype($filename, $mimes);
+
+        return [
+            'ext'             => $filetype['ext'],
+            'type'            => $filetype['type'],
+            'proper_filename' => $data['proper_filename']
+        ];
+    }, 10, 4);
+
+    add_filter('upload_mimes', function ($mimes) {
+        $mimes['svg'] = 'image/svg+xml';
+        return $mimes;
+    });
 }, 20);
 
 /**
@@ -121,4 +146,18 @@ add_action('widgets_init', function () {
         'name' => __('Footer', 'sage'),
         'id' => 'sidebar-footer',
     ] + $config);
+});
+
+add_action('rest_api_init', function () {
+    register_rest_route('pikdesign/v1', 'save_support', [
+        'methods' => 'POST',
+        'callback' => function (WP_REST_Request $request) {
+            $message = [
+                'status' => 'success',
+                'response' => $request->get_json_params()
+            ];
+
+            return $message;
+        }
+    ], false);
 });

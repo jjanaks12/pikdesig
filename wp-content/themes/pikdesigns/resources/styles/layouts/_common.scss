@@ -1,0 +1,66 @@
+body {
+    @apply text-sm leading-tight;
+    background: var(--base);
+}
+
+h2 {
+    font-size: rem-calc(32px);
+}
+
+#wrapper {
+    @apply bg-white overflow-hidden relative;
+}
+
+.logo {
+    @apply text-2xl font-bold;
+
+    img {
+        @apply w-full h-auto;
+    }
+}
+
+.under_construction {
+    @apply bg-white w-screen h-screen text-center flex justify-center items-center text-xl;
+
+    h1 {
+        @apply text-4xl mb-4;
+    }
+
+    .logo {
+        @apply w-[120] mx-auto mb-4;
+    }
+}
+
+.swiper {
+    position: relative;
+
+    &-wrapper {
+        width: 100%;
+        display: flex;
+    }
+
+    &-slide {
+        flex-shrink: 0;
+    }
+}
+
+.sr-only {
+    @apply absolute invisible opacity-0;
+}
+
+.form__group {
+    @apply relative;
+
+    input {
+        @apply text-[#344854] w-full h-14 block px-4 rounded-s outline-none border border-solid border-transparent;
+    }
+
+    &.has--error input {
+        border-color: var(--danger);
+    }
+
+    .error__message {
+        @apply inline-block align-top pt-2;
+        color: var(--danger);
+    }
+}
