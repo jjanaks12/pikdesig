@@ -33,6 +33,7 @@ class ThemeOption extends Field
                 ->addImage('logo', ['label' => 'Logo', 'return_format' => 'id'])
             ->endGroup()
             ->addGroup('Theme Colors')
+                ->addColorPicker('base', ['label' => 'Base Color'])
                 ->addColorPicker('primary', ['label' => 'Primary'])
                 ->addColorPicker('secondary', ['label' => 'Seondary'])
                 ->addColorPicker('info', ['label' => 'Info'])

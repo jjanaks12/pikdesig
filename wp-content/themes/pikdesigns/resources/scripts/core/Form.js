@@ -2,6 +2,7 @@ import { formDataToJSON } from "@scripts/lib/helpers"
 import { Schema } from "yup"
 
 export default class FormHandler {
+    errors = {}
 
     /**
      * 
@@ -9,7 +10,7 @@ export default class FormHandler {
      * @param {Schema} schema
      * @param {Function} callback 
      */
-    constructor(el, schema, callback) {        
+    constructor(el, schema, callback) {
         this.$el = el
         this.schema = schema
         this.callback = callback
@@ -31,9 +32,41 @@ export default class FormHandler {
         this.schema.validate(data, { strict: true })
             .then(() => {
                 this.callback(data)
+                this.clearErrors(data)
             })
-            .catch((_, err) => {
-                console.log(err);
+            .catch((err) => {
+                this.errors[err.path] = err.errors
+                this.showErrors()
+            })
+    }
+
+    showErrors() {
+        Object.keys(this.errors)
+            .forEach(fieldName => {
+                const $input = document.querySelector(`[name=${fieldName}]`)
+                const $parent = $input.closest('.form__group')
+                let $errorMSG = $parent.querySelector('.error__message')
+
+                if (!$errorMSG) {
+                    $errorMSG = document.createElement('span')
+                    $errorMSG.classList.add('error__message')
+                    $parent.append($errorMSG)
+                }
+
+                $parent.classList.add('has--error')
+                $errorMSG.innerText = this.errors[fieldName]
+            })
+    }
+
+    clearErrors(data) {
+        Object.keys(this.errors)
+            .forEach(fieldName => {
+                const $input = document.querySelector(`[name=${fieldName}]`)
+                const $parent = $input.closest('.form__group')
+                const $errorMSG = $parent.querySelector('.error__message')
+
+                $errorMSG.remove()
+                $parent.classList.remove('has--error')
             })
     }
 }

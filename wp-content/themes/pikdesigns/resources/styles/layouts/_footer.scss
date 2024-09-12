@@ -1,3 +1,23 @@
 #footer {
-    @apply bg-base;
+    background: var(--base);
+}
+
+.footer__nav {
+    @apply flex;
+
+    >li {
+        @apply grow;
+
+        >a {
+            @apply text-xl inline-block align-top mb-4;
+        }
+
+        >.sub-menu {
+            @apply flex flex-col gap-2;
+
+            a {
+                @apply hover:opacity-45 transition-opacity;
+            }
+        }
+    }
 }

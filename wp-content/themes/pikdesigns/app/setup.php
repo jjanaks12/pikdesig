@@ -6,6 +6,8 @@
 
 namespace App;
 
+use WP_REST_Request;
+
 use function Roots\bundle;
 
 /**
@@ -144,4 +146,18 @@ add_action('widgets_init', function () {
         'name' => __('Footer', 'sage'),
         'id' => 'sidebar-footer',
     ] + $config);
+});
+
+add_action('rest_api_init', function () {
+    register_rest_route('pikdesign/v1', 'save_support', [
+        'methods' => 'POST',
+        'callback' => function (WP_REST_Request $request) {
+            $message = [
+                'status' => 'success',
+                'response' => $request->get_json_params()
+            ];
+
+            return $message;
+        }
+    ], false);
 });

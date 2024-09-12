@@ -1,5 +1,6 @@
 body {
-    @apply bg-base text-sm leading-tight;
+    @apply text-sm leading-tight;
+    background: var(--base);
 }
 
 h2 {
@@ -32,7 +33,7 @@ h2 {
 
 .swiper {
     position: relative;
-    
+
     &-wrapper {
         width: 100%;
         display: flex;
@@ -45,4 +46,21 @@ h2 {
 
 .sr-only {
     @apply absolute invisible opacity-0;
+}
+
+.form__group {
+    @apply relative;
+
+    input {
+        @apply text-[#344854] w-full h-14 block px-4 rounded-s outline-none border border-solid border-transparent;
+    }
+
+    &.has--error input {
+        border-color: var(--danger);
+    }
+
+    .error__message {
+        @apply inline-block align-top pt-2;
+        color: var(--danger);
+    }
 }

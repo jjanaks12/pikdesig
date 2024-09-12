@@ -7,6 +7,7 @@
     @php(wp_head())
     <style>
         body {
+          --base: {!! get_field('Theme Colors_base', 'option') !!};
           --primary: {!! get_field('Theme Colors_primary', 'option') !!};
           --secondary: {!! get_field('Theme Colors_secondary', 'option') !!};
           --info: {!! get_field('Theme Colors_info', 'option') !!};
