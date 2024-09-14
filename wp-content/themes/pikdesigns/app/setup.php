@@ -148,7 +148,7 @@ add_action('widgets_init', function () {
     ] + $config);
 });
 
-add_action('rest_api_init', function () {
+/* add_action('rest_api_init', function () {
     register_rest_route('pikdesign/v1', 'save_support', [
         'methods' => 'POST',
         'callback' => function (WP_REST_Request $request) {
@@ -160,4 +160,4 @@ add_action('rest_api_init', function () {
             return $message;
         }
     ], false);
-});
+}); */
