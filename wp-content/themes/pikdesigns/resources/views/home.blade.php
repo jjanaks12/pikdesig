@@ -14,7 +14,7 @@
         <div class="container">
             <div class="holder max-w-[56%]">
                 <em class="not-italic block mb-2">Personalized Ads</em>
-                <h1 class="text-5xl mb-3">Good ideas deserve to be found. See how personalized ads can help.</h1>
+                <h1>Good ideas deserve to be found. See how personalized ads can help.</h1>
                 <a href="#" class="text-white">
                     <span class="w-7 inline-flex align-top justify-center items-center border border-solid rotate-180 rounded-full aspect-square">
                         <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" width="18" height="18" data-name="Layer 1">

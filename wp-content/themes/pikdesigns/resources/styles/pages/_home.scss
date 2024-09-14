@@ -22,6 +22,19 @@
             transform: translate(-50%, -50%);
         }
     }
+
+    &__content {
+        h1 {
+            @apply text-5xl mb-3;
+
+            @include media('>=tablet', '<1920px') {
+                font-size: 2.375rem;
+                line-height: 3rem;
+                letter-spacing: 0.5px;
+                font-weight: 600;
+            }
+        }
+    }
 }
 
 .portfolio,
